@@ -49,7 +49,7 @@ metadata:
   name: jboss-jboss-app-8
   title: JBoss - jboss-app-8
   annotations:
-    jboss.io/stato: building
+    jboss.io/stato: running
     jboss.io/host-port: "8088"
     jboss.io/image-tag: "1.0"
     jenkins.io/job-full-name: "ansible-jboss"
