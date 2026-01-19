@@ -31,6 +31,21 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
+  name: jboss-jboss-app-5
+  title: JBoss - jboss-app-5
+  annotations:
+    jboss.io/stato: building
+    jboss.io/host-port: "8085"
+    jboss.io/image-tag: "1.0"
+    jenkins.io/job-full-name: "ansible-jboss"
+spec:
+  type: jboss-instance
+  lifecycle: experimental
+  owner: user:guest
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
   name: jboss-jboss-app
   title: JBoss - jboss-app
   annotations:
