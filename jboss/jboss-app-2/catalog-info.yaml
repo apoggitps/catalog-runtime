@@ -12,18 +12,3 @@ spec:
   type: jboss-instance
   lifecycle: experimental
   owner: user:guest
----
-apiVersion: backstage.io/v1alpha1
-kind: Component
-metadata:
-  name: jboss-jboss-app
-  title: JBoss - jboss-app
-  annotations:
-    jboss.io/stato: running
-    jboss.io/host-port: "8081"
-    jboss.io/image-tag: "1.0"
-    jenkins.io/job-full-name: "ansible-jboss"
-spec:
-  type: jboss-instance
-  lifecycle: experimental
-  owner: user:guest
