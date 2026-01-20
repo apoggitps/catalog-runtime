@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: jboss-jboss-app-0
+  title: JBoss - jboss-app-0
+  annotations:
+    jboss.io/stato: building
+    jboss.io/host-port: "8081"
+    jboss.io/image-tag: "1.0"
+    jenkins.io/job-full-name: "ansible-jboss"
+
+    # build specifica che ha creato questa istanza
+    jboss.io/jenkins-build-url: "http://localhost:8080/job/ansible-jboss/52/"
+    jboss.io/jenkins-build-number: "52"
+    jboss.io/jenkins-build-result: "BUILDING"
+spec:
+  type: jboss-instance
+  lifecycle: experimental
+  owner: user:guest
