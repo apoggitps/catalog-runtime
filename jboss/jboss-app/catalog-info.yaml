@@ -4,10 +4,15 @@ metadata:
   name: jboss-jboss-app
   title: JBoss - jboss-app
   annotations:
-    jboss.io/stato: running
+    jboss.io/stato: building
     jboss.io/host-port: "8081"
     jboss.io/image-tag: "1.0"
     jenkins.io/job-full-name: "ansible-jboss"
+
+    # build specifica che ha creato questa istanza
+    jboss.io/jenkins-build-url: "http://localhost:8080/job/ansible-jboss/54/"
+    jboss.io/jenkins-build-number: "54"
+    jboss.io/jenkins-build-result: "BUILDING"
 spec:
   type: jboss-instance
   lifecycle: experimental
